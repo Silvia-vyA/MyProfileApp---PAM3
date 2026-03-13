@@ -1,40 +1,80 @@
-This is a Kotlin Multiplatform project targeting Android, Desktop (JVM).
+# 📱 MyProfileApp — PAM3
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+## Student Profile Application
+**Course:** Pengembangan Aplikasi Web  
+**Class:** RB  
 
-### Build and Run Android Application
+Project ini merupakan tugas **PAM3 (Pertemuan 3)** pada mata kuliah **Pengembangan Aplikasi Web** yang bertujuan membuat aplikasi profil sederhana menggunakan **Compose Multiplatform**.
 
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
-
-### Build and Run Desktop (JVM) Application
-
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
+Aplikasi ini menampilkan informasi profil mahasiswa dalam tampilan **UI card yang rapi dan estetik**, serta menerapkan konsep **Composable Functions yang reusable**.
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## 👤 Student Information
+
+| Data | Keterangan |
+|-----|------------|
+| Nama | Silvia |
+| NIM | 123140133 |
+| Kelas | RB |
+| Mata Kuliah | Pengembangan Aplikasi Web |
+
+---
+
+## 📌 Deskripsi Aplikasi
+
+Aplikasi ini menampilkan halaman profil mahasiswa yang berisi:
+
+- Foto profil
+- Nama dan NIM
+- Deskripsi singkat
+- Informasi kontak (Email, Phone, Location)
+- Hobi dalam bentuk chip card
+- Tombol **Contact Me**
+
+Aplikasi dibuat menggunakan **Jetpack Compose / Compose Multiplatform** sehingga setiap komponen UI dibuat dalam bentuk **Composable Function yang reusable**.
+
+---
+
+## 🧩 Reusable Composable Components
+
+Beberapa komponen composable yang digunakan:
+
+- **ProfileHeader**  
+  Menampilkan foto profil, nama, dan NIM.
+
+- **InfoItem**  
+  Menampilkan informasi kontak seperti email, phone, dan location.
+
+- **ProfileCard**  
+  Komponen utama yang membungkus seluruh informasi profil.
+
+- **HobbySection**  
+  Menampilkan daftar hobi pengguna.
+
+- **HobbyChip**  
+  Komponen kecil untuk menampilkan satu hobi dengan ikon.
+
+---
+
+## 🖼️ Tampilan Aplikasi
+
+Berikut adalah hasil tampilan aplikasi:
+
+![PAM3 Screenshot](./composeApp/pam3.jpeg)
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+- Kotlin
+- Compose Multiplatform
+- Material 3
+- Android Studio
+
+---
+
+
+
+
+⭐ Project ini dibuat sebagai bagian dari tugas **Pengembangan Aplikasi Web (PAM3)**.
